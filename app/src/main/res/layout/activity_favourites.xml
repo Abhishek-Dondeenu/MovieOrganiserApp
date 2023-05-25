@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Coral"
+    tools:context=".Favourites">
+
+    <ListView
+        android:id="@+id/favouritesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="110dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="379dp"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:text="@string/favourite_guide"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveFavoritesBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/saveFavoritesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deselectFavourites"
+        android:text="@string/save_fav"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/favouritesListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

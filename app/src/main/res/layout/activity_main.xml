@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Coral"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:onClick="registerMovie"
+        android:text="@string/register_movie"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/edit_movie_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/edit_movies"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:textColor="@color/black"
+        android:onClick="editMovies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorites_btn"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/ratings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ratings"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:textColor="@color/black"
+        android:onClick="ratings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_btn"
+        app:layout_constraintVertical_bias="0.041"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/display_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/display_movies"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:textColor="@color/black"
+        android:onClick="displayMovies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/search"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:textColor="@color/black"
+        android:onClick="search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_movie_btn"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/favorites_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="favourites"
+        android:text="@string/favorites"
+        android:backgroundTint="@color/MediumSeaGreen"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_btn"
+        tools:ignore="UnusedAttribute" />
+</androidx.constraintlayout.widget.ConstraintLayout>
